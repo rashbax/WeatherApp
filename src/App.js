@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+
+import RMain from "./ResponsiveApp/RMain";
+import '../src/WeatherApp/Style.css'
+import { Offline, Online } from "react-detect-offline";
 
 function App() {
+ 
   return (
+    <>
+    <Online>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RMain/>
     </div>
+    </Online>
+    <Offline>
+      <h3>Error</h3>
+    </Offline>
+    </>
   );
 }
 
