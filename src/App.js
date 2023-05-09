@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <RMain/>
     </div>
-      <h3>Error</h3>
+      
     </>
   );
 }
